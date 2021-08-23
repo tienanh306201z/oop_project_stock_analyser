@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fill="#1984d0" fontSmoothingType="LCD" layoutX="74.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ĐÃ HẾT HẠN SỬ DỤNG PHẦN MỀM">
+            <font>
+                <Font name="Calibri Light" size="32.0" />
+            </font>
+        </Text>
+        <Text layoutX="176.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YÊU CẦU QUÝ KHÁCH NẠP LẦN ĐẦU!!" wrappingWidth="248.19921875">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextArea editable="false" layoutX="14.0" layoutY="176.0" prefHeight="200.0" prefWidth="189.0" text="GÓI  SINH VIÊN : 500.000 VNĐ&#10;_Dùng phần mềm trong 1 tháng&#10;_Dùng các tính năng cơ bản&#10;_Giới hạn xem các tags" />
+        <TextArea editable="false" layoutX="211.0" layoutY="176.0" prefHeight="200.0" prefWidth="189.0" text="GÓI ĐẦU TƯ : 2.000.000 VNĐ&#10;_Dùng phần mềm trong 5 tháng&#10;_Dùng 1 số tính năng VIP&#10;_Giới hạn xem 1 số tags" />
+        <TextArea editable="false" layoutX="408.0" layoutY="176.0" prefHeight="200.0" prefWidth="183.0" text="GÓI ĐẠI GIA: 1 TỶ&#10;_Dùng phần mềm trọn đời&#10;_Dùng tất cả các tính năng VIP&#10;_Xem tất cả các tags" />
+    </children>
+</AnchorPane>

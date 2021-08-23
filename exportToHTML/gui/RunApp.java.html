@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>RunApp.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c3cee3;}
+.s1 { color: #546e7a; font-style: italic;}
+.s2 { color: #c792ea; font-style: italic;}
+.s3 { color: #89ddff;}
+.s4 { color: #c3e88d;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+RunApp.java</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">//Lớp dùng để khởi tạo stage và chạy chương trình</span>
+
+<span class="s2">package </span><span class="s0">gui</span><span class="s3">;</span>
+
+<span class="s2">import </span><span class="s0">java</span><span class="s3">.</span><span class="s0">io</span><span class="s3">.</span><span class="s0">File</span><span class="s3">;</span>
+
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">application</span><span class="s3">.</span><span class="s0">Application</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">fxml</span><span class="s3">.</span><span class="s0">FXMLLoader</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">scene</span><span class="s3">.</span><span class="s0">Parent</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">scene</span><span class="s3">.</span><span class="s0">Scene</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">stage</span><span class="s3">.</span><span class="s0">Stage</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">javafx</span><span class="s3">.</span><span class="s0">stage</span><span class="s3">.</span><span class="s0">StageStyle</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s0">readdata</span><span class="s3">.</span><span class="s0">GetCompanyGroup</span><span class="s3">;</span>
+
+<span class="s2">public class </span><span class="s0">RunApp </span><span class="s2">extends </span><span class="s0">Application </span><span class="s3">{</span>
+
+    <span class="s2">public static void </span><span class="s0">main</span><span class="s3">(</span><span class="s0">String</span><span class="s3">[] </span><span class="s0">args</span><span class="s3">) </span><span class="s2">throws </span><span class="s0">Exception </span><span class="s3">{</span>
+        <span class="s0">String filePath </span><span class="s3">= </span><span class="s2">new </span><span class="s0">File</span><span class="s3">(</span><span class="s4">&quot;&quot;</span><span class="s3">).</span><span class="s0">getAbsolutePath</span><span class="s3">();</span>
+        <span class="s0">GetCompanyGroup</span><span class="s3">.</span><span class="s0">GetCompanyInfo</span><span class="s3">(</span><span class="s2">new </span><span class="s0">File</span><span class="s3">(</span><span class="s0">filePath </span><span class="s3">+ </span><span class="s4">&quot;</span><span class="s3">\\</span><span class="s4">src</span><span class="s3">\\</span><span class="s4">readdata</span><span class="s3">\\</span><span class="s4">CompanyName.csv&quot;</span><span class="s3">));</span>
+        <span class="s0">launch</span><span class="s3">(</span><span class="s0">args</span><span class="s3">);</span>
+    <span class="s3">}</span>
+
+    <span class="s0">@Override</span>
+    <span class="s2">public void </span><span class="s0">start</span><span class="s3">(</span><span class="s0">Stage primaryStage</span><span class="s3">) {</span>
+        <span class="s2">try </span><span class="s3">{</span>
+            <span class="s0">Parent root </span><span class="s3">= </span><span class="s0">FXMLLoader</span><span class="s3">.</span><span class="s0">load</span><span class="s3">(</span><span class="s2">this</span><span class="s3">.</span><span class="s0">getClass</span><span class="s3">().</span><span class="s0">getResource</span><span class="s3">(</span><span class="s4">&quot;DesignUI.fxml&quot;</span><span class="s3">));</span>
+            <span class="s0">Scene scene </span><span class="s3">= </span><span class="s2">new </span><span class="s0">Scene</span><span class="s3">(</span><span class="s0">root</span><span class="s3">);</span>
+            <span class="s0">scene</span><span class="s3">.</span><span class="s0">getStylesheets</span><span class="s3">().</span><span class="s0">add</span><span class="s3">(</span><span class="s0">getClass</span><span class="s3">().</span><span class="s0">getResource</span><span class="s3">(</span><span class="s4">&quot;application.css&quot;</span><span class="s3">).</span><span class="s0">toExternalForm</span><span class="s3">());</span>
+            <span class="s0">primaryStage</span><span class="s3">.</span><span class="s0">setTitle</span><span class="s3">(</span><span class="s4">&quot;Stock Analysis Program&quot;</span><span class="s3">);</span>
+            <span class="s0">primaryStage</span><span class="s3">.</span><span class="s0">setScene</span><span class="s3">(</span><span class="s0">scene</span><span class="s3">);</span>
+            <span class="s0">primaryStage</span><span class="s3">.</span><span class="s0">initStyle</span><span class="s3">(</span><span class="s0">StageStyle</span><span class="s3">.</span><span class="s0">DECORATED</span><span class="s3">);</span>
+            <span class="s0">primaryStage</span><span class="s3">.</span><span class="s0">show</span><span class="s3">();</span>
+        <span class="s3">} </span><span class="s2">catch </span><span class="s3">(</span><span class="s0">Exception e</span><span class="s3">) {</span>
+            <span class="s0">e</span><span class="s3">.</span><span class="s0">printStackTrace</span><span class="s3">();</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+<span class="s3">}</span></pre>
+</body>
+</html>

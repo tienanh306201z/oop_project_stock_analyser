@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextArea fx:id="textArea2" editable="false" prefHeight="301.0" prefWidth="558.0" text="------------------------About Us------------------------&#10;Trần Tiến Anh - MSSV: 20193982 - IT1-04-K64&#10;Trần Thành Long - MSSV: 20194103 - IT1-04-K64&#10;Nguyễn Văn Đạt - MSSV: 20194014 - IT1-04-K64&#10;Nguyễn Minh Lương - MSSV: 20194108 - IT1-04-K64&#10;Nguyễn Văn Sáng - MSSV: 20194153 - IT1-04-K64&#10;Nguyễn Hữu Hải - MSSV: 20194039 - IT1-04-K64&#10;Nguyễn Minh Hiển - MSSV: 20194045 - IT1-04-K64">
+            <font>
+                <Font name="MV Boli" size="20.0" />
+            </font></TextArea>
+    </children>
+</AnchorPane>

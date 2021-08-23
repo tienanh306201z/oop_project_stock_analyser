@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Final Project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Final_Project_jar</output-path>
+    <root id="archive" name="Final Project.jar">
+      <element id="module-output" name="Final Project" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/javafx.web.jar" path-in-jar="/" />
+      <element id="library" level="project" name="libs" />
+      <element id="library" level="project" name="javafx.base" />
+    </root>
+  </artifact>
+</component>
